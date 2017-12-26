@@ -7,7 +7,7 @@
 FROM debian:stretch-slim
 
 MAINTAINER accetto
-ENV REFRESHED_AT 2017-12-25
+ENV REFRESHED_AT 2017-12-26
 
 LABEL vendor="accetto" \
     any.abcdevs.description="Docker test image hello-there-debian" \
