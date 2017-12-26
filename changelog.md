@@ -1,6 +1,6 @@
-# Changelog of `accetto/hello-there` image stack #
+# Changelog of `accetto/hello-there` image stack
 
-### Version 1.0.0 ###
+### Version 1.0.0
 
 (December 2017)
 
