@@ -10,10 +10,10 @@ MAINTAINER accetto
 ENV REFRESHED_AT 2017-12-26
 
 LABEL vendor="accetto" \
-    any.abcdevs.description="Docker test image hello-there-debian" \
-    any.abcdevs.display-name="Docker test image hello-there-debian" \
-    any.abcdevs.expose-services="none" \
-    any.abcdevs.tags="hello-there, test, debian"
+    any.accetto.description="Docker test image hello-there-debian" \
+    any.accetto.display-name="Docker test image hello-there-debian" \
+    any.accetto.expose-services="none" \
+    any.accetto.tags="hello-there, test, debian"
 
 WORKDIR /usr/src/hello
     
