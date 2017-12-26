@@ -1,0 +1,24 @@
+# docker build -f Dockerfile-alpine.build -t accetto/hello-there-alpine .
+# docker run --name=hello-alpine accetto/hello-there-alpine
+# docker start -i hello-alpine
+# size of 'alpine:latest': 4.139 MB
+# size of 'accetto/hello-there-alpine': 4.17 MB
+
+FROM alpine
+
+MAINTAINER accetto
+ENV REFRESHED_AT 2017-12-25
+
+LABEL vendor="accetto" \
+    any.abcdevs.description="Docker test image hello-there-alpine" \
+    any.abcdevs.display-name="Docker test image hello-there-alpine" \
+    any.abcdevs.expose-services="none" \
+    any.abcdevs.tags="hello-there, test, alpine"
+
+COPY ./hello-alpine.c .
+
+RUN apk add --no-cache build-base \
+    && gcc hello-alpine.c -o hello-alpine \
+    && apk del --purge build-base
+
+CMD ["./hello-alpine"]
