@@ -4,4 +4,4 @@
 
 (December 2017)
 
-- Initial images `hello-there-alpine` and `hello-there-debian` created. 
+- Initial images `hello-there-alpine` and `hello-there-debian` created.
