@@ -1,10 +1,10 @@
-# Changelog of `accetto/hello-there` repository
+# Changelog of `accetto/hello-there-debian` repository
 
 ### Version 1.1.0
 
 (December 2017)
 
-- Alpine and Debian bases split into separate folders
+- Debian base split into a separate folder
 
 ### Version 1.0.0
 

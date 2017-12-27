@@ -1,4 +1,4 @@
-# docker build -f Dockerfile-debian.build -t accetto/hello-there-debian .
+# docker build -t accetto/hello-there-debian .
 # docker run --name=hello-debian accetto/hello-there-debian
 # docker start -i hello-debian
 # size of 'debian:stretch-slim': 55.25 MB
@@ -7,7 +7,7 @@
 FROM debian:stretch-slim
 
 MAINTAINER accetto
-ENV REFRESHED_AT 2017-12-26
+ENV REFRESHED_AT 2017-12-27
 
 LABEL vendor="accetto" \
     any.accetto.description="Docker test image hello-there-debian" \
@@ -17,14 +17,14 @@ LABEL vendor="accetto" \
 
 WORKDIR /usr/src/hello
     
-COPY ./hello-debian.c .
+COPY ./src .
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends gcc libc6-dev \
-    && gcc hello-debian.c -o hello-debian \
+    && gcc hello.c -o hello \
     && apt-get remove -y --purge gcc libc6-dev \
     && apt-get autoremove -y --purge \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
     
-CMD ["./hello-debian"]
+CMD ["./hello"]
