@@ -1,5 +1,11 @@
 # Changelog of `accetto/hello-there-alpine` repository
 
+### Version 1.1.1
+
+(December 2017)
+
+- README got badges from [MicroBadger](https://microbadger.com/)
+
 ### Version 1.1.0
 
 (December 2017)

@@ -6,3 +6,6 @@ This is a test repository for docker test images based Debian images.
 There are currently the following images in the set:
 
 - [`hello-there-debian`](https://hub.docker.com/r/accetto/hello-there-debian/) is based on the official [`debian:stretch-slim`](https://hub.docker.com/_/debian/) image
+
+[![](https://images.microbadger.com/badges/version/accetto/hello-there-debian.svg)](https://microbadger.com/images/accetto/hello-there-debian "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/accetto/hello-there-debian.svg)](https://microbadger.com/images/accetto/hello-there-debian "Get your own image badge on microbadger.com")
+
