@@ -4,7 +4,7 @@
 
 (December 2017)
 
-- README got badges from [MicroBadger](https://microbadger.com/)
+- README got badges from [MicroBadger](https://microbadger.com/) (still Beta)
 
 ### Version 1.1.0
 
