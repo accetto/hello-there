@@ -6,10 +6,10 @@
 
 FROM alpine
 
-MAINTAINER accetto
-ENV REFRESHED_AT 2017-12-27
+ENV REFRESHED_AT 2018-04-07
 
 LABEL vendor="accetto" \
+    maintainer="https://github.com/accetto" \
     any.accetto.description="Docker test image hello-there-alpine" \
     any.accetto.display-name="Docker test image hello-there-alpine" \
     any.accetto.expose-services="none" \
