@@ -1,5 +1,11 @@
 # Changelog of `accetto/hello-there-alpine` repository
 
+### Version 1.1.2
+
+(April 2018)
+
+- `MAINTAINER` is part of `LABEL` now
+
 ### Version 1.1.1
 
 (December 2017)
