@@ -1,4 +1,17 @@
-# Changelog of `accetto/hello-there` repository
+# CHANGELOG
+
+## accetto/hello-there
+
+[Git Hub][this-github] - [Docker Hub (alpine)][this-docker-alpine] - [Docker Hub (debian)][this-docker-debian]
+
+***
+
+### Version 19.05
+
+- `changelog.md` renamed to `CHANGELOG.md`
+- common **README** and **CHANGELOG** updated
+- `README.md` and `changelog.md` files removed from the `alpine` and `debian` subfolders
+- version numbering changed
 
 ### Version 1.1.2
 
@@ -23,3 +36,7 @@
 (December 2017)
 
 - Initial images `hello-there-alpine` and `hello-there-debian` created.
+
+[this-github]: https://github.com/accetto/hello-there
+[this-docker-alpine]: https://hub.docker.com/r/accetto/hello-there-alpine
+[this-docker-debian]: https://hub.docker.com/r/accetto/hello-there-debian
