@@ -1,8 +1,6 @@
 # docker build -t accetto/hello-there-debian .
 # docker run --name=hello-debian accetto/hello-there-debian
 # docker start -i hello-debian
-# size of 'debian:stretch-slim': 55.25 MB
-# size of 'accetto/hello-there-debian': 55.45 MB
 
 FROM debian:stretch-slim
 
@@ -10,10 +8,10 @@ ENV REFRESHED_AT 2019-05-01
 
 LABEL vendor="accetto" \
     maintainer="https://github.com/accetto" \
-    any.accetto.description="Docker test image hello-there-debian" \
-    any.accetto.display-name="Docker test image hello-there-debian" \
+    any.accetto.description="Minimal hello-there-debian container" \
+    any.accetto.display-name="Minimal hello-there-debian container" \
     any.accetto.expose-services="none" \
-    any.accetto.tags="hello-there, test, debian"
+    any.accetto.tags="hello-there, debian"
 
 WORKDIR /usr/src/hello
     
