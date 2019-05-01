@@ -6,7 +6,7 @@
 
 FROM debian:stretch-slim
 
-ENV REFRESHED_AT 2018-04-07
+ENV REFRESHED_AT 2019-05-01
 
 LABEL vendor="accetto" \
     maintainer="https://github.com/accetto" \
