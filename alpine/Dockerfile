@@ -1,24 +1,24 @@
-# docker build -t accetto/hello-there-alpine .
-# docker run --name=hello-alpine accetto/hello-there-alpine
+# docker build -t accetto/hello-there:alpine .
+
+### requires login to Docker Hub
+# docker buildx build --platform linux/amd64,linux/arm64 -t accetto/hello-there:alpine . --push
+
+# docker run --name=hello-alpine accetto/hello-there:alpine
 # docker start -i hello-alpine
 
-FROM alpine
-
-ENV REFRESHED_AT 2019-05-01
-
-LABEL vendor="accetto" \
-    maintainer="https://github.com/accetto" \
-    any.accetto.description="Minimal hello-there-alpine container" \
-    any.accetto.display-name="Minimal hello-there-alpine container" \
-    any.accetto.expose-services="none" \
-    any.accetto.tags="hello-there, alpine"
+FROM alpine as stage_builder
 
 WORKDIR /usr/src/hello
 
 COPY ./src .
 
-RUN apk add --no-cache build-base \
-    && gcc hello.c -o hello \
-    && apk del --purge build-base
+RUN apk add build-base
+RUN gcc hello.c -o hello
+
+FROM alpine as stage_final
+
+WORKDIR /usr/src/hello
+
+COPY --from=stage_builder /usr/src/hello .
 
 CMD ["./hello"]
