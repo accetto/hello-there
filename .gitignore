@@ -12,5 +12,9 @@
 # recommended files on 'https://github.com/github/gitignore'
 
 .vscode
+.developer
+.secret
 developer*
 TODO*
+scrap*
+secret*

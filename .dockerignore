@@ -2,4 +2,10 @@
 !src
 *.md
 *.sh
-TODO*.*
+.vscode
+.developer
+.secret
+developer*
+TODO*
+scrap*
+secret*
