@@ -2,7 +2,7 @@
 
 ## accetto/hello-there
 
-[Git Hub][this-github] - [Docker Hub (alpine)][this-docker-alpine] - [Docker Hub (debian)][this-docker-debian]
+[Git Hub][this-github] - [Docker Hub][this-dockerhub]
 
 ***
 
@@ -12,6 +12,7 @@
 - meta-data layers removed
 - both images into one Docker Hub repository
 - multi-arch builds tested
+- README and CHANGELOG updated
 
 ### Version 19.05
 
@@ -44,6 +45,7 @@
 
 - Initial images `hello-there-alpine` and `hello-there-debian` created.
 
+***
+
 [this-github]: https://github.com/accetto/hello-there
-[this-docker-alpine]: https://hub.docker.com/r/accetto/hello-there-alpine
-[this-docker-debian]: https://hub.docker.com/r/accetto/hello-there-debian
+[this-dockerhub]: https://hub.docker.com/r/accetto/hello-there

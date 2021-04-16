@@ -2,7 +2,7 @@
 
 ## accetto/hello-there
 
-[Git Hub][this-github] - [Changelog][this-changelog] - [Docker Hub (alpine)][this-docker-alpine] - [Docker Hub (debian)][this-docker-debian]
+[Git Hub][this-github] - [Changelog][this-changelog] - [Docker Hub][this-dockerhub]
 
 ***
 
@@ -12,15 +12,12 @@ This repository contains resources for building minimal Docker images, containin
 
 There are currently the following images in the set:
 
-- [`hello-there-alpine`](https://hub.docker.com/r/accetto/hello-there-alpine/) is based on the official [`alpine:latest`](https://hub.docker.com/_/alpine/) image.
+- `hello-there:alpine` is based on the official [`alpine:latest`](https://hub.docker.com/_/alpine/) image.
 
-[![](https://images.microbadger.com/badges/version/accetto/hello-there-alpine.svg)](https://microbadger.com/images/accetto/hello-there-alpine "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/accetto/hello-there-alpine.svg)](https://microbadger.com/images/accetto/hello-there-alpine "Get your own image badge on microbadger.com")
+- `hello-there-debian` is based on the official [`debian:stretch-slim`](https://hub.docker.com/_/debian/) image.
 
-- [`hello-there-debian`](https://hub.docker.com/r/accetto/hello-there-debian/) is based on the official [`debian:stretch-slim`](https://hub.docker.com/_/debian/) image.
-
-[![](https://images.microbadger.com/badges/version/accetto/hello-there-debian.svg)](https://microbadger.com/images/accetto/hello-there-debian "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/accetto/hello-there-debian.svg)](https://microbadger.com/images/accetto/hello-there-debian "Get your own image badge on microbadger.com")
+***
 
 [this-github]: https://github.com/accetto/hello-there
 [this-changelog]: https://github.com/accetto/hello-there/blob/master/CHANGELOG.md
-[this-docker-alpine]: https://hub.docker.com/r/accetto/hello-there-alpine
-[this-docker-debian]: https://hub.docker.com/r/accetto/hello-there-debian
+[this-dockerhub]: https://hub.docker.com/r/accetto/hello-there
