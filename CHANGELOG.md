@@ -6,6 +6,13 @@
 
 ***
 
+### Release 21.04
+
+- multi-stage Dockerfiles
+- meta-data layers removed
+- both images into one Docker Hub repository
+- multi-arch builds tested
+
 ### Version 19.05
 
 - `changelog.md` renamed to `CHANGELOG.md`
