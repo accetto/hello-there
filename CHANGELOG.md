@@ -6,6 +6,12 @@
 
 ***
 
+### Release 21.04.1
+
+- project layout changed
+- hook scripts added
+- multi-arch building added
+
 ### Release 21.04
 
 - multi-stage Dockerfiles
