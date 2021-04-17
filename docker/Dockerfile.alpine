@@ -1,0 +1,20 @@
+# docker build -f Dockerfile.alpine -t dev/hello-there:alpine .
+
+FROM alpine as stage_builder
+
+WORKDIR /usr/src/hello
+
+COPY ./alpine/src .
+
+RUN \
+    apk add \
+        build-base \
+    && gcc hello.c -o hello
+
+FROM alpine as stage_final
+
+WORKDIR /usr/src/hello
+
+COPY --from=stage_builder /usr/src/hello .
+
+CMD ["./hello"]

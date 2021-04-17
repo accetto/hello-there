@@ -1,0 +1,22 @@
+# docker build -f Dockerfile.debian -t dev/hello-there:debian .
+
+FROM debian:stretch-slim as stage_builder
+
+WORKDIR /usr/src/hello
+    
+COPY ./debian/src .
+
+RUN \
+    apt-get update \
+    && apt-get install -y --no-install-recommends \
+        gcc \
+        libc6-dev \
+    && gcc hello.c -o hello
+
+FROM debian:stretch-slim as stage_final
+
+WORKDIR /usr/src/hello
+
+COPY --from=stage_builder /usr/src/hello .
+    
+CMD ["./hello"]

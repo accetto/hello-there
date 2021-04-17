@@ -1,0 +1,9 @@
+.debugger*
+.developer*
+.secrets*
+*.log
+avanti*
+debug*
+secret*
+scrap*
+TODO*
