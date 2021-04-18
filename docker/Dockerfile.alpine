@@ -1,6 +1,9 @@
 # docker build -f Dockerfile.alpine -t dev/hello-there:alpine .
 
-FROM alpine as stage_builder
+ARG BASEIMAGE=alpine
+ARG BASETAG=latest
+
+FROM ${BASEIMAGE}:${BASETAG} as stage_builder
 
 WORKDIR /usr/src/hello
 
@@ -11,7 +14,7 @@ RUN \
         build-base \
     && gcc hello.c -o hello
 
-FROM alpine as stage_final
+FROM ${BASEIMAGE}:${BASETAG} as stage_final
 
 WORKDIR /usr/src/hello
 

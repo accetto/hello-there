@@ -1,13 +1,13 @@
-# docker build -f Dockerfile.debian -t dev/hello-there:debian .
+# docker build -f Dockerfile.ubuntu -t dev/hello-there:ubuntu .
 
-ARG BASEIMAGE=debian
-ARG BASETAG=stretch-slim
+ARG BASEIMAGE=ubuntu
+ARG BASETAG=20.04
 
 FROM ${BASEIMAGE}:${BASETAG} as stage_builder
 
 WORKDIR /usr/src/hello
     
-COPY ./debian/src .
+COPY ./ubuntu/src .
 
 RUN \
     apt-get update \

@@ -5,3 +5,6 @@ docker buildx create --name archbuilder --platform linux/amd64,linux/arm64,linux
 docker buildx use archbuilder
 
 docker buildx inspect --bootstrap
+
+### just reporting
+docker buildx inspect
