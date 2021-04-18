@@ -12,9 +12,11 @@ This repository contains resources for building minimal Docker images, containin
 
 There are currently the following images in the set:
 
-- `hello-there:alpine` is based on the official [`alpine:latest`](https://hub.docker.com/_/alpine/) image.
+- `hello-there:alpine` images are based on the official [alpine](https://hub.docker.com/_/alpine/) images
 
-- `hello-there-debian` is based on the official [`debian:stretch-slim`](https://hub.docker.com/_/debian/) image.
+- `hello-there:debian` images are based on the official [debian](https://hub.docker.com/_/debian/) images
+
+- `hello-there:ubuntu` images are based on the official [ubuntu](https://hub.docker.com/_/ubuntu) images
 
 ***
 
