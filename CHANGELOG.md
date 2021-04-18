@@ -6,6 +6,11 @@
 
 ***
 
+### Release 21.04.2
+
+- build hook script supports building per architecture
+- **ubuntu** based images added
+
 ### Release 21.04.1
 
 - project layout changed
